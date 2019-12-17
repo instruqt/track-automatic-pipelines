@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'cat code | grep "Continuous integration is great!"'
+        sh 'cat code | grep -i "Continuous integration is great!"'
       }
     }
 
