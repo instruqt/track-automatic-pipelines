@@ -9,7 +9,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'cat code | grep -i "Continuous integration is great!"'
-        sh '[[ $(ls | wc -l) -ge 4 ]]'
+        sh '[ $(ls | wc -l) -ge 3 ]'
       }
     }
 
